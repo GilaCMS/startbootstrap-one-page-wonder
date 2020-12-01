@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # startbootstrap-one-page-wonder
 =======
 # [Start Bootstrap - One Page Wonder](https://startbootstrap.com/theme/one-page-wonder/)
