@@ -45,12 +45,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="<?=Config::base()?>user/login">Sign Up</a>
-          </li>
-          <!--<li class="nav-item">
-            <a class="nav-link" href="#">Log In</a>
-          </li>-->
+          <?php 
+          if(Session::userId()>0){?>
+            <li class="nav-item">
+              <a class="nav-link" href="<?=Config::base()?>user/login">Sign Out</a>
+            </li>
+          <?php }else{ ?>
+            <li class="nav-item">
+              <a class="nav-link" href="<?=Config::base()?>user/login">Sign In</a>
+            </li>
+          <?php } ?>
         </ul>
       </div>
     </div>
